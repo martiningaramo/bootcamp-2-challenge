@@ -125,3 +125,27 @@ Contenido file1:
 Que me gusta bash!!!!
 Contenido file2:
 Que me gusta bash!!!!
+
+### Ejercicio 4 - Opcional
+
+#### Prueba script ejer4.sh sin ingresar parametro
+
+tinchogaramo@LAPTOP-KC61B6TA:~/devops/bootcamp-2-challenge/01$ ./ejer4.sh 
+Ingrese un parametro
+
+#### Prueba script ejer4.sh con parametro Benefits
+
+tinchogaramo@LAPTOP-KC61B6TA:~/devops/bootcamp-2-challenge/01$ ./ejer4.sh Benefits
+--2022-07-30 17:08:36--  https://es.wikipedia.org/wiki/DevOps
+Resolving es.wikipedia.org (es.wikipedia.org)... 208.80.154.224, 2620:0:861:ed1a::1
+Connecting to es.wikipedia.org (es.wikipedia.org)|208.80.154.224|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 86025 (84K) [text/html]
+Saving to: ‘STDOUT’
+
+-                                          100%[======================================================================================>]  84.01K   205KB/s    in 0.4s    
+
+2022-07-30 17:08:37 (205 KB/s) - written to stdout [86025/86025]
+
+Numero de linea donde aparece la palabra  Benefits
+200
