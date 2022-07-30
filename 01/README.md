@@ -1,4 +1,4 @@
-#Reto1 Logs
+# Reto1
 ## Ejercicio 1 - Manejo de archivos
 tinchogaramo@LAPTOP-KC61B6TA:~/devops/bootcamp-2-challenge$ mkdir foo foo/dummy foo/empty
 tinchogaramo@LAPTOP-KC61B6TA:~/devops/bootcamp-2-challenge/01/foo/dummy$ touch file1.txt
@@ -39,3 +39,89 @@ tinchogaramo@LAPTOP-KC61B6TA:~/devops/bootcamp-2-challenge/01$ cat foo/dummy/fil
 `Me encanta bash!!`
 tinchogaramo@LAPTOP-KC61B6TA:~/devops/bootcamp-2-challenge/01$ cat foo/empty/file2.txt 
 `Me encanta bash!!`
+
+### Ejercicio 3 - Argumentos del script
+
+#### Prueba Script ejer3.sh ingresando parametro "Hola Mundo"
+
+tinchogaramo@LAPTOP-KC61B6TA:~/devops/bootcamp-2-challenge/01$ ls -l
+total 16
+-rw-r--r-- 1 tinchogaramo tinchogaramo 1470 Jul 30 15:34 README.md
+-rw-r--r-- 1 tinchogaramo tinchogaramo  507 Jul 30 15:53 ejer3.sh
+drwxr-xr-x 4 tinchogaramo tinchogaramo 4096 Jul 30 15:17 foo
+-rw-r--r-- 1 tinchogaramo tinchogaramo 1426 Jul 30 14:52 reto1.md
+tinchogaramo@LAPTOP-KC61B6TA:~/devops/bootcamp-2-challenge/01$ rm -r foo
+tinchogaramo@LAPTOP-KC61B6TA:~/devops/bootcamp-2-challenge/01$ ./ejer3.sh "Hola Mundo"
+Ejecutando pasos Ejercicio 1
+Mostrar resultado pasos Ejercicio 1:
+Arbol de directorios:
+.:
+README.md  ejer3.sh  foo  reto1.md
+
+./foo:
+dummy  empty
+
+./foo/dummy:
+file1.txt  file2.txt
+
+./foo/empty:
+Contenido file1:
+Hola Mundo
+Contenido file2:
+Ejecutando pasos Ejercicio 2
+Mostrar resultado pasos Ejercicio 2:
+Arbol de directorios:
+.:
+README.md  ejer3.sh  foo  reto1.md
+
+./foo:
+dummy  empty
+
+./foo/dummy:
+file1.txt
+
+./foo/empty:
+file2.txt
+Contenido file1:
+Hola Mundo
+Contenido file2:
+Hola Mundo
+
+#### Prueba script ejer3.sh sin parámetros
+
+tinchogaramo@LAPTOP-KC61B6TA:~/devops/bootcamp-2-challenge/01$ rm -r foo
+tinchogaramo@LAPTOP-KC61B6TA:~/devops/bootcamp-2-challenge/01$ ./ejer3.sh 
+Ejecutando pasos Ejercicio 1
+Mostrar resultado pasos Ejercicio 1:
+Arbol de directorios:
+.:
+README.md  ejer3.sh  foo  reto1.md
+
+./foo:
+dummy  empty
+
+./foo/dummy:
+file1.txt  file2.txt
+
+./foo/empty:
+Contenido file1:
+Que me gusta bash!!!!
+Contenido file2:
+Ejecutando pasos Ejercicio 2
+Mostrar resultado pasos Ejercicio 2:
+Arbol de directorios:
+.:
+README.md  ejer3.sh  foo  reto1.md
+
+./foo:
+dummy  empty
+
+./foo/dummy:
+file1.txt
+
+./foo/empty:
+file2.txt
+Contenido file1:
+Que me gusta bash!!!!
+Contenido file2:
+Que me gusta bash!!!!
